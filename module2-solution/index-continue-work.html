@@ -21,10 +21,10 @@ h1 { font-family: Georgia;
 h2 { 
      border: 1px solid red;
      background-color: pink;
-	   font-family: Lucida Bright;
-	   font-size: : 25%;
-	   display:inline; float:right;
-	   margin: 0px;
+	 font-family: Lucida Bright;
+	 font-size: : 25%;
+	 display:inline; float:right;
+	 margin: 0px;
      padding: 5px 20px 5px 20px;
    
     }
@@ -63,7 +63,7 @@ div .main-text {
 
 /* Simple Responsive Framework. */
  .row {
-   border: 0px solid pink;
+   border: 1px solid pink;
    width: 100%;
  }
 
@@ -102,7 +102,16 @@ div .main-text {
    height: 100%;}
 
 
+ /********** Small devices only **********/
+ @media (min-width: 767px) {
 
+ .col-md-1, .col-md-2, .col-md-3 {float: left; 
+ 	}
+
+p {width: 90%;
+   height: 100%;}
+
+}
 
 
 </style>
@@ -148,7 +157,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum, tel
 
 </div>
 
-
+<h1>Responsive Layout</h1>
+ 
+ <div class="row">
+  <div><p>Item 1</p></div>
+   <div ><p>Item 2 Wow this is cool</p></div>
+   <div ><p>Item 3</p></div>
+   <div ><p>Item 4</p></div>
+   <div ><p>Item 5 This is cool</p></div>
+   <div ><p>Item 6</p></div>
+   <div><p>Item 7</p></div>
+   <div class="col-lg-1 col-md-3"> <div class="main-text"><h2>H2</h2><p>Item 8</p></div></div>
+ </div>
 
 </body>
 </html>
