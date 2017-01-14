@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap The CDN Way</title>
+
+<!-- This is where we link the CDN files -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+ </nav>
+</header>
+
+
+<!-- CAROUSEL SLIDER -->
+<div class="row">
+	<div class="col-xs-12">
+	  <div id="my-slider" class="carousel slide" data-ride="carousel">
+
+	   <!-- indicator dot nav -->
+	    <ol class="carousel-indicators">
+	    	<li data-target="#my-slider" data-slide-to="0" class="active"></li>
+	    	<li data-target="#my-slider" data-slide-to="1"></li>
+	    	<li data-target="#my-slider" data-slide-to="2"></li>
+	        <li data-target="#my-slider" data-slide-to="3"></li>
+	        <li data-target="#my-slider" data-slide-to="4"></li>
+	        <li data-target="#my-slider" data-slide-to="5"></li>
+	        <li data-target="#my-slider" data-slide-to="6"></li>
+	        <li data-target="#my-slider" data-slide-to="7"></li>
+	    </ol>
+
+	   <!-- wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+             <div class="item active"><img src="images/2.jpg" alt="Photo 2" /></div>
+              <div class="carousel-caption"><h1>This is Florence</h1></div>
+
+              <div class="item"><img src="images/1.jpg" alt="Photo 2" /></div>
+              <div class="carousel-caption"><h1>This is Florence</h1></div>
+
+              <div class="item"><img src="images/3.jpg" alt="Photo 3" /></div>
+              <div class="carousel-caption"><h1>This is Florence</h1></div>
+
+              <div class="item"><img src="images/4.jpg" alt="Photo 4" /></div>
+              <div class="carousel-caption"><h1>This is Florence</h1></div>
+
+              <div class="item"><img src="images/5.jpg" alt="Photo 5" /></div>
+              <div class="carousel-caption"><h1>This is Florence</h1></div>
+
+              <div class="item"><img src="images/6.jpg" alt="Photo 6" /></div>
+              <div class="carousel-caption"><h1>This is Florence</h1></div>
+
+              <div class="item"><img src="images/7.jpg" alt="Photo 7" /></div>
+              <div class="carousel-caption"><h1>This is Florence</h1></div>
+
+              <div class="item"><img src="images/8.jpg" alt="Photo 8" /></div>
+              <div class="carousel-caption"><h1>This is Florence</h1></div>
+
+	    </div>
+
+	   <!-- controls -->
+	    <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+	     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	     <span class="sr-only">Previous image</span>
+	    </a>
+
+	    <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+	     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	     <span class="sr-only">Next image</span>
+	    </a>
+	  	
+	  </div>
+         
+
+	</div>
+</div>
+<!-- CAROUSEL SLIDER ENDS-->
+
+<div class="row">
+  <section class="col-md-8">
+  	<h1>Testing Bootstrap Layouts</h1>
+  	<p>Some paragraph text. Some paragraph text. Some paragraph text. Some paragraph text. Some paragraph text. Some paragraph text. Some paragraph text. Some paragraph text. Some paragraph text. Some paragraph text. Some paragraph text. Some paragraph text. Some paragraph text. Some paragraph text.</p>
+  </section>
+
+  <aside class="col-md-4"> 
+   <div class="panel panel-default">
+    <div class="panel-heading">Our Florence Trip, Italy</div>
+     <div class="panel-body">
+     <img src="images/2.jpg" alt="Firenze - Image 1" class="img-responsive" />
+     </div>
+    </div>
+    <div class="panel panel-default">
+    <div class="panel-heading">Firenze, Italy</div>
+     <div class="panel-body">
+     <img src="images/1.jpg" alt="Firenze - Image 2" class="img-responsive" />
+     </div>
+    </div>
+  </aside>
+</div>
+
+<div class="row">
+ <footer class="col-xs-12">
+  <p class="text-center">&copy; Copyright 2017</p>
+ </footer>
+</div>
+
+
+
+</div><!-- container ends -->
+
+
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!-- Bootstrap Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
